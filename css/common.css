@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url('./font/NotoSansCJKsc-DemiLight.ttf');
+}
+@font-face {font-family: "iconfont";
+    src: url('./iconfont/iconfont.eot'); /* IE9*/
+    src: url('./iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('./iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('./iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-weibo:before { content: "\e600"; }
+.iconMan:before { content: "\e601"; color:#3ea3fa}
+.icon-weichat:before { content: "\e602"; }
+.icon-cart:before { content: "\e603"; }
+.icon-arrow:before { content: "\e604"; }
+.iconWoman:before { content: "\e605"; color:#ee5a64 }
+.icon-search:before { content: "\e606"; }
+
+body,html{
+    font-family: 'NotoSans'!important;
+    margin:0;
+    padding:0;
+    min-width: 1200px;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#footer {
+    box-sizing: border-box;
+    padding-top: 20px;
+    min-height: 140px;
+    font-size: 14px!important;
+    height: auto;
+    border-top:solid 1px #3a3f4e;
+    min-width: 1200px;
+    background: #3a3f4e;
+}
+#footer p{
+    margin: 0;
+}
+#footer_warp{
+    width: 1200px;
+    margin: 0 auto;
+}
+#f_one{
+    height: 40px;
+}
+.f_one{
+    float: left;
+}
+.f_one_logo{
+    margin-left: 505px;
+}
+.f_one_span{
+    display: block;
+    height: 20px;
+    border-left:solid gray 1px;
+    width: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.f_one_p{
+    font-size: 1rem;
+    line-height: 40px;
+    vertical-align: middle;
+    color: white;
+}
+
+#f_two{
+    height: 35px;
+}
+#f_two ul{
+    text-align: center;
+}
+#f_two li{
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+#f_two li a{
+    color: white;
+}
+#f_two li a:hover{
+    color:#3ea3fa;
+}
+#f_two .f_two{
+    height: 35px;
+}
+#f_wei_chat_img, #f_weibo_img{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+#f_three p{
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+#f_two #wechat {
+    cursor: pointer;
+    position:relative;=
+}
+#f_two #wechat:hover > .wechatQR {
+    display: block;
+}
+#f_two #wechat p{
+    color: #000;
+    line-height: 20px;
+    margin-top: 10px;
+}
+#f_two #wechat .wechatQR{
+    z-index: 999;
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    bottom: 40px;
+    left: -50px;
+    display: none;
+}
+.toast-top-center{
+    top: 50px!important;
+}
+#toast-container .toast.toast-success,#toast-container .toast.toast-warning,#toast-container .toast.toast-error,#toast-container .toast.toast-info{
+    background-image: none!important;
+}
+#toast-container .toast.toast-error{
+    background-image: none!important;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0 0 8px 0 grey;
+    border-radius: 10px;
+}
+.loader-inner{
+    overflow: hidden;
+    width: 100px;
+    margin: 50px 25px;
+}
+.pacman > div:first-of-type {
+    border-top: 25px solid #3ea3fa!important;
+    border-left: 25px solid #3ea3fa!important;
+    border-bottom: 25px solid #3ea3fa!important;
+}
+.pacman > div:nth-child(2) {
+    border-top: 25px solid #3ea3fa!important;
+    border-left: 25px solid #3ea3fa!important;
+    border-bottom: 25px solid #3ea3fa!important;
+}
+.pacman > div:nth-child(3), .pacman > div:nth-child(4), .pacman > div:nth-child(5), .pacman > div:nth-child(6) {
+    background: #3ea3fa!important;
+}

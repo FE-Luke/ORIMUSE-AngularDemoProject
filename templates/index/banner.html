@@ -1,0 +1,24 @@
+<div class="banner" ng-style="{background:data.ports[nowBanner].extension_color}">
+    <div class="banner-outer">
+        <div class="category">
+            <div class="category-title">优秀作品分类</div>
+            <div class="lists" ng-repeat="list in data.tagmst | limitTo: 6">
+                <div class="title" ng-bind="list.name"></div>
+                <div class="sub-title">
+                    <a href="#/test" ng-repeat="tag in list.tags | limitTo: 3" ng-bind="tag.name"></a>
+                </div>
+                <div class="tag-list" ng-style={width:ceil((list.tags.length-3)/9)*112}>
+                    <a href="#" ng-repeat="tag in list.tags" ng-show="$index>2" ng-bind="tag.name"></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-imgs" ng-repeat="port in data.ports" ng-class="{show:$index == nowBanner}" lazy-container>
+            <img lazy-src="{{port.picture}}" animate-visible="true" animate-speed="0.5s" class="banner-img" ng-click="bannerHref(port)">
+        </div>
+        <ul class="banner-dots">
+            <li ng-repeat="port in data.ports" ng-bind="$index" ng-click="setBanner($index)" ng-class="{sel:$index == nowBanner}"></li>
+        </ul>
+        <div class="banner-switch banner-prev iconfont icon-arrow" ng-click="prevBanner()"></div>
+        <div class="banner-switch banner-next iconfont icon-arrow" ng-click="nextBanner()" style="transform: rotateY(180deg)"></div>
+    </div>
+</div>

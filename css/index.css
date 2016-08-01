@@ -1,0 +1,412 @@
+body{
+    background:#f7f9fb!important
+}
+.banner{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.8s ease;
+}
+.banner .banner-outer{
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner .show{
+    opacity: 1!important;
+}
+.banner:hover .banner-switch{
+    opacity: 1;
+}
+.banner .banner-switch{
+    transition: opacity 0.3s ease;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    width: 36px;
+    height: 70px;
+    z-index: 66;
+    top: 200px;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    font-size: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+.banner .banner-switch.banner-prev{
+    left:225px;
+}
+.banner .banner-switch.banner-next{
+    right:0;
+}
+.banner .banner-imgs{
+    width: 1200px;
+    height: 450px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.banner .banner-img{
+    width: 1200px;
+    height: 450px;
+    display: block;
+    transform-origin: center center;
+}
+.banner .banner-dots{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 5px;
+    text-align: center;
+    z-index: 666;
+}
+.banner .banner-dots li{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-indent: -999em;
+    background: #fff;
+    transition:background 0.3s ease;
+}
+.banner .banner-dots li:hover , .banner .banner-dots li.sel{
+    background: #3ea3fa;
+}
+.banner .category{
+    background:rgba(53,61,68,0.8);
+    width: 225px;
+    height:450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 666;
+}
+.category .category-title{
+    text-align: left!important;
+    width: 225px!important;
+    background: #3ea3fa;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+.banner .category > div {
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.category .lists{
+    color:#fff;
+    cursor: pointer;
+    height: 62px;
+    overflow: hidden;
+}
+.category .lists:hover > .tag-list{
+    display: block;
+}
+.category .lists a{
+    color: #fff;
+    text-decoration: none;
+}
+.category .lists:hover {
+    border-left: none;
+    border-right: none;
+    background: #65b5eb;
+}
+.category .lists .title{
+    padding-top: 5px;
+    line-height: 28px;
+}
+.category .lists .sub-title {
+    font-size: 13px;
+}
+.category .lists .sub-title a {
+    color: #fff;
+    line-height: 25px;
+    margin-right: 10px;
+}
+.category .lists .tag-list {
+    padding-top: 0;
+    display: none;
+    position: absolute;
+    z-index: 6666;
+    top: 0;
+    left:225px;
+    min-width: 225px!important;
+    box-sizing: border-box;
+    height: 450px;
+    background: #fff;
+}
+.category .lists .tag-list a {
+    display: block;
+    float: left;
+    width: 112px;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+    line-height: 45px;
+}
+.category .lists .tag-list a:hover {
+    background: #444;
+    color:#fff;
+}
+
+
+.container .intro{
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+}
+.container .intro .intro_block {
+    float: left;
+    width: 390px;
+    height: 200px;
+    margin-right: 15px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.container .intro .intro_block:last-of-type {
+    margin-right: 0;
+}
+.container .intro .intro_block .icon {
+    text-align: center;
+}
+.container .intro .intro_block .line1 {
+    color: #3ea3fa;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+}
+.container .intro .intro_block .line2 {
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+}
+.container .recommend-designer{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.recommend-designer .list{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.recommend-designer .list:hover > .list-switch{
+    background: rgba(0,0,0,0.5);
+}
+.recommend-designer .list .list-switch{
+    transition: background 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    top: 105px;
+    z-index: 999;
+    position: absolute;
+    width: 24px;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+    line-height: 50px;
+}
+.recommend-designer .list .list-switch.list-prev{
+    left: 0;
+}
+.recommend-designer .list .list-switch.list-next{
+    right: 2px;
+}
+.recommend-designer .list .list-inner{
+    min-width: 100%;
+    height: 250px;
+    transition: margin-left 0.5s ease;
+}
+.recommend-designer .list .list-inner .card{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 222px;
+    margin-right: 22px;
+    background: #fff;
+}
+.recommend-designer .list .list-inner .card .info{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    overflow: hidden;
+    color: #444;
+}
+.recommend-designer .list .list-inner .card .info .name{
+    margin: 10px 0;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.recommend-designer .list .list-inner .card .info .desc{
+    padding: 0 25px;
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 20px;
+    color: #666;
+    text-overflow: ellipsis;
+    max-height: 40px;
+}
+
+.recommend-designer .list .list-inner .card:hover > .option{
+    bottom:0;
+}
+.recommend-designer .list .list-inner .card:last-of-type{
+    margin-right: 0!important;
+}
+.recommend-designer .avatar{
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    width: 92px;
+    height: 92px;
+    top: 55px;
+    left: 65px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.recommend-designer .avatar img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 84px;
+    height: 84px;
+}
+.recommend-designer .avatar .designerTag{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #3ea3fa;
+}
+.recommend-designer .avatar .designerTag img{
+    background: #3ea3fa!important;
+    width: 20px;
+    height: 20px;
+}
+.recommend-title{
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    line-height: 30px;
+}
+.recommend-title .title-sep{
+    margin-top: 3px;
+    float: left;
+    width: 5px;
+    height: 25px;
+    background: #3ea3fa;
+    margin-right: 10px;
+}
+.container .recommend-design{
+    height: 380px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.container .recommend-design .list{
+    position: relative;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+}
+.container .recommend-design .list:hover > .list-switch{
+    background: rgba(0,0,0,0.5);
+}
+.recommend-design .list .list-switch{
+    transition: background 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    top: 130px;
+    z-index: 999;
+    position: absolute;
+    width: 36px;
+    height: 70px;
+    background: rgba(0,0,0,0.0);
+    line-height: 70px;
+}
+.recommend-design .list .list-switch.list-prev{
+    left: 0;
+}
+.recommend-design .list .list-switch.list-next{
+    right: 2px;
+}
+.container .recommend-design .list .list-inner{
+    transition: margin-left 0.5s ease;
+    height: 330px;
+    min-width: 100%;
+}
+.container .recommend-design .list .list-inner .card{
+    display: block;
+    margin-right: 22px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 222px;
+    background: #fff;
+    color: #000;
+}
+.container .recommend-design .list .list-inner .card:hover > .option{
+    bottom: 0;
+}
+
+.option{
+    transition: bottom 0.5s ease;
+    box-sizing: border-box;
+    padding-left: 8px;
+    position: absolute;
+    bottom: -55px;
+    width: 100%;
+    height: 55px;
+    background: rgba(62,163,250,0.9);
+    padding: 0;
+}
+.option div{
+    transition: background 0.3s ease,color,0.3s ease;
+    cursor: pointer;
+    margin-top: 13px;
+    margin-left: 53px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    height: 30px;
+    width: 115px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.option div:hover{
+    background: #fff;
+    color: #3ea3fa;
+}
+
+.toast-text{
+    font-size: 16px!important;
+}

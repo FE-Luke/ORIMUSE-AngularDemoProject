@@ -1,0 +1,21 @@
+<div class="recommend-design">
+    <div class="recommend-title clearfix">
+        <div class="title-sep"></div>
+        推荐作品
+    </div>
+    <div class="list">
+        <div class="list-inner" ng-style="{marginLeft:nowDesignList * -244,width:data.designrecommend.length*250 - 22}">
+            <a href="#" ng-repeat="design in data.designrecommend" class="card">
+                <div class="cloth-thumb" lazy-container>
+                    <img lazy-src="" class="cloth">
+                    <img lazy-src="" class="design">
+                </div>
+                <div class="option">
+                    <div>立即购买</div>
+                </div>
+            </a>
+        </div>
+        <div class="list-switch list-prev iconfont icon-arrow" ng-click="prevDesignList()"></div>
+        <div class="list-switch list-next iconfont icon-arrow" style="transform: rotateY(180deg)" ng-click="nextDesignList()"></div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="recommend-designer">
+    <div class="recommend-title clearfix">
+        <div class="title-sep"></div>
+        推荐达人
+    </div>
+    <div class="list">
+        <div class="list-inner" ng-style="{marginLeft:nowDesignerList * -244,width:data.topmanrecommend.length*250 - 22}">
+            <a ng-repeat="designer in data.topmanrecommend" class="card" href="#" lazy-container>
+                <img lazy-src="http://www.orimuse.com/{{designer.coverpicturesmaller}}" animate-visible="true" animate-speed="0.5s"/>
+                <div class="avatar" lazy-container>
+                    <img lazy-src="{{designer.avatar}}" animate-visible="true" animate-speed="0.5s"/>
+                    <div class="designerTag" ng-show="designer.level == 3" >
+                        <img lazy-src="/images/designerTag.png" animate-visible="true" animate-speed="0.5s" width="25" />
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="name">{{designer.name}}<span class="iconfont" ng-class="{iconWoman:designer.gender==0,iconMan:designer.gender!=0}" style="margin-left: 5px"></span></p>
+                    <p class="desc" ng-bind="designer.description"></p>
+                </div>
+                <div class="option">
+                    <div>去看看</div>
+                </div>
+            </a>
+        </div>
+        <div class="list-switch list-prev iconfont icon-arrow" ng-click="prevList()"></div>
+        <div class="list-switch list-next iconfont icon-arrow" style="transform: rotateY(180deg)" ng-click="nextList()"></div>
+    </div>
+</div>
